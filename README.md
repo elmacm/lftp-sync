@@ -13,10 +13,10 @@ LFTP is a sophisticated ftp/http client, and a file transfer program supporting 
 * create a file called **sync.cfg**. `touch sync.cfg`.
 * add the following information `vim sync.cfg`
 
-> ftp_host=your.ftp.com
-> ftp_user=user123
-> ftp_password=password123
-> dir_local=/your/local/dir
+> ftp_host=your.ftp.com  
+> ftp_user=user123  
+> ftp_password=password123  
+> dir_local=/your/local/dir  
 > dir_remote=/your/remote/dir
 
 * execute the shell script e.g. `./sync.sh`
