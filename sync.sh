@@ -39,14 +39,15 @@ else
   ## specifies -n option for pget command used to transfer every single file under mirror. Default is 1 which disables pget.
   set mirror:use-pget-n 5
 
+  ## --only-missing # download only missing files
+  ## --continue # continue a mirror job if possible
+  ## -P5 # download N files in parallel
+  ## --log=sync.log # write lftp commands being executed to FILE
+
   mirror\
-    ## download only missing files
     --only-missing\
-    ## continue a mirror job if possible
     --continue\
-    ## download N files in parallel
     -P5\
-    ## write lftp commands being executed to FILE
     --log=sync.log\
     $dir_remote\
     $dir_local
